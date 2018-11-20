@@ -30,7 +30,7 @@ Package.onUse(function(api) {
         'pac-reach:meteor-collection-hooks',
         'reywood:publish-composite@1.5.2',
         'dburles:mongo-collection-instances@0.3.5',
-        'herteby:denormalize@0.6.5',
+        'pac-reach:denormalize',
         'peerlibrary:subscription-scope@0.4.0',
     ];
 
