@@ -1,10 +1,10 @@
 Package.describe({
-    name: 'cultofcoders:grapher',
-    version: '1.3.9_3',
+    name: 'pac-reach:grapher',
+    version: '1.3.9_4',
     // Brief, one-line summary of the package.
     summary: 'Grapher is a data fetching layer on top of Meteor',
     // URL to the Git repository containing the source code for this package.
-    git: 'https://github.com/cult-of-coders/grapher',
+    git: 'https://github.com/pac-reach/grapher',
     // By default, Meteor will default to using README.md for documentation.
     // To avoid submitting documentation, set this field to null.
     documentation: 'README.md',
@@ -18,7 +18,7 @@ Npm.depends({
 });
 
 Package.onUse(function(api) {
-    api.versionsFrom('1.3');
+    api.versionsFrom('1.8');
 
     var packages = [
         'ecmascript',
@@ -27,7 +27,7 @@ Package.onUse(function(api) {
         'check',
         'reactive-var',
         'mongo',
-        'matb33:collection-hooks@0.8.4',
+        'pac-reach:meteor-collection-hooks',
         'reywood:publish-composite@1.5.2',
         'dburles:mongo-collection-instances@0.3.5',
         'herteby:denormalize@0.6.5',
@@ -46,7 +46,7 @@ Package.onTest(function(api) {
     var packages = [
         'ecmascript',
         'underscore',
-        'matb33:collection-hooks@0.8.4',
+        'pac-reach:meteor-collection-hooks',
         'reywood:publish-composite@1.5.2',
         'dburles:mongo-collection-instances@0.3.5',
         'herteby:denormalize@0.6.5',
