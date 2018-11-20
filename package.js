@@ -1,5 +1,5 @@
 Package.describe({
-    name: 'pac-reach:grapher',
+    name: 'cultofcoders:grapher',
     version: '1.3.9_4',
     // Brief, one-line summary of the package.
     summary: 'Grapher is a data fetching layer on top of Meteor',
@@ -31,7 +31,7 @@ Package.onUse(function(api) {
         'reywood:publish-composite@1.5.2',
         'dburles:mongo-collection-instances@0.3.5',
         'pac-reach:denormalize',
-        'peerlibrary:subscription-scope@0.4.0',
+        'peerlibrary:subscription-scope',
     ];
 
     api.use(packages);
