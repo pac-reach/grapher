@@ -39,6 +39,8 @@ Package.onUse(function(api) {
   api.mainModule("main.client.js", "client");
   api.mainModule("main.server.js", "server");
 
+});
+
 Package.onTest(function(api) {
   api.use("cultofcoders:grapher");
 
