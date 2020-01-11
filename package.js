@@ -33,7 +33,6 @@ Package.onUse(function(api) {
         'pac-reach:denormalize',
         'peerlibrary:subscription-scope',
     ];
-
     api.use(packages);
 
     api.mainModule('main.client.js', 'client');
