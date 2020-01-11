@@ -84,7 +84,7 @@ const admins = createQuery({
 
 ## Go Modular, Always.
 
-Ofcourse the recommended approach is to always use `modular`. Creating queries in files, and importing them accordingly.
+Of course the recommended approach is to always use `modular`. Creating queries in files, and importing them accordingly.
 The reason we expose such functionality is because if you want to use [Grapher as an HTTP API](outside_grapher.md), 
 you do not have access to the collections, so this becomes very handy, as you can transform a JSON request into a query.
 
@@ -243,7 +243,7 @@ const user = await userAdminListQuery.clone().fetchOneSync();
 
 ## Counters
 
-You can ofcourse use the same paradigm to use counts:
+You can of course use the same paradigm to use counts:
 ```js
 // static query
 query.getCount((err, count) => {
@@ -514,6 +514,15 @@ This part is solved by adding "query path" field to the docs, in format `_query_
 where Alice has namespace equal to `users_friends` and client-side recursive fetching can now distinguish between the documents that should be returned as a query result (John) and as a `friends` link results for John (which is Alice).
 
 By adding query path field into the documents, we ensure that there is no mixup between the documents in the same reactive query (i.e. subscription).
+
+## Setting Default Configuration
+If you want all you named queries to be, for example, scoped, you can do this with `NamedQuery.setConfig`.
+```
+import {NamedQuery} from 'meteor/cultofcoders:grapher';
+NamedQuery.setConfig({scoped: true});
+```
+
+Do this in a code that is loaded both on server and a client.
 
 ## Conclusion
 
